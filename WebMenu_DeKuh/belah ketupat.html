@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>luas Belah Ketupat</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="miranab.css" type="text/css">
+</head>
+<body>
+<a href="halaman pertama.html"><button>Back</button></a>
+<center><h2>Luas Belah Ketupat</h2></center>
+<center><p>(½ x D1 x D2)</p></center>
+<p>D1</p>
+<input id="d1" type="number" placeholder="Input Diagonal 1">
+<p>D2</p>
+<input id="d2" type="number" placeholder="Input Diagonal 2">
+<button onclick="cekhasil()">Hasil</button>
+<p id="hasil"></p>
+<p>Luas :</p>
+<span id="luasnya" type="number"></span>
+<script>
+function cekhasil() {
+var d1 = document.getElementById("d1").value;
+var d2 = document.getElementById("d2").value;
+document.getElementById("luasnya").innerHTML=d1*d2*0.5;
+
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>luas lingkaran</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="miranab.css" type="text/css">
+</head>
+<body>
+<a href="halaman pertama.html"><button>Back</button></a>
+<center><h2>Luas Lingkaran</h2></center>
+<center><p>(π x r²)</p></center>
+<p>Jari-jari</p>
+<input id="jari" type="number" placeholder="Input Jari-jari">
+<button onclick="cekhasil()">Hasil</button>
+<p id="hasil"></p>
+<p>Luas :</p>
+<span id="luasnya" type="number"></span>
+<script>
+function cekhasil() {
+var jari  = document.getElementById("jari").value;
+document.getElementById("luasnya").innerHTML=jari*jari*3.14;
+}
+</script>
+</body>
+</html>

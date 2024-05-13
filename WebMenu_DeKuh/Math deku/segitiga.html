@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Luas Segitiga</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<a href="halaman pertama.html"><button>Back</button></a>
+<center><h2>Luas Segitiga</h2></center>
+<center><p>(½ x Alas x Tinggi)</p></center>
+<p>Alas</p>
+<input id="alas" type="number" placeholder="Input alas">
+<p>Tinggi</p>
+<input id="tinggi" type="number" placeholder="Input tinggi">
+<button onclick="cekHasil()">Hasil</button>
+<p id="hasil"></p>
+<p>Luas :</p>
+<span id="luas" type="number"></span>
+<script>
+function cekHasil() {
+var alas = document.getElementById("alas").value;
+var tinggi = document.getElementById("tinggi").value;
+document.getElementById("luas").innerHTML=(alas*tinggi)*0.5;
+
+}
+</script>
+</body>
+</html>
